@@ -10,7 +10,7 @@
   <h4>SSG Voting System</h4>
 
   <p align="center">
-    Voting System for Student Supreme Government
+    Voting System for Supreme Student  Government
    
 </div>
 
