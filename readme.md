@@ -47,32 +47,45 @@ Steps on how to install the project locally:
     git clone https://github.com/wilken311/voting-system.git
     ```
 2. Install NPM packages
+
     ```sh
     composer install
     ```
+
+    Note: (Error Might Occur) `Undefined index: name`
+    [Click me to fix.](https://stackoverflow.com/questions/61177995/laravel-packagemanifest-php-undefined-index-name)
+
 3. Create `.env`file
 
     ```sh
     touch .env
     ```
 
-4. configure `.env` file. Replace the name of your database created
+4. configure `.env` file. Replace the name of your database created on XAMPP Server
 
     ```sh
     DB_DATABASE=votingsystem
+    DB_USERNAME=root
+    DB_PASSWORD=
     ```
 
-5. Migrate database table and seed data
+5. Generate Application Key
+
+    ```sh
+    php artisan key:generate
+    ```
+
+6. Migrate database table and seed data
     ```js
     php artisan migrate --seed
     ```
-6. Run the app
+7. Run the app
     ```js
     php artisan serve
     ```
-7. Open link below
-   `js http://127.0.0.1:8000/`
-    <!-- ROADMAP -->
+8. Open the App
+[127.0.0.1:8000](http://127.0.0.1:8000/)
+ <!-- ROADMAP -->
 
 ## Roadmap
 
@@ -88,7 +101,7 @@ Steps on how to install the project locally:
 -   [x] Student's Vote Status
 -   [x] Filing of COC
 -   [x] Election Day
-    <!-- CONTRIBUTING -->
+<!-- CONTRIBUTING -->
 
 ## Contributing
 
